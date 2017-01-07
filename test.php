@@ -1,18 +1,18 @@
-	function audiobook_form() {
+	function fullshow_form() {
 		$Torrent = $this->Torrent;
 ?>
 		<table cellpadding="3" cellspacing="1" border="0" class="layout border slice" width="100%">
 <?		if ($this->NewTorrent) { ?>
 			<tr id="title_tr">
-				<td class="label">Author - Title:</td>
+				<td class="label">Performance Title:</td>
 				<td>
 					<input type="text" id="title" name="title" size="60" value="<?=display_str($Torrent['Title']) ?>" />
-					<p class="min_padding">Should only include the author if applicable.</p>
+					<p class="min_padding"></p>
 				</td>
 			</tr>
 <?		} ?>
 			<tr id="year_tr">
-				<td class="label">Year:</td>
+				<td class="label">Year Recorded:</td>
 				<td><input type="text" id="year" name="year" size="5" value="<?=display_str($Torrent['Year']) ?>" /></td>
 			</tr>
 			<tr>
